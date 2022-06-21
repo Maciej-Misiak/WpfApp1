@@ -36,6 +36,7 @@ namespace WpfApp1
             adres_txt.Clear();
             nip_txt.Clear();
             email_txt.Clear();
+            szukaj_txt.Clear();
         }
 
         public bool isValid()
@@ -114,12 +115,43 @@ private void DodajBtn_txt_Click(object sender, RoutedEventArgs e)
             SqlCommand cmd = new SqlCommand("delete from FirstTable where ID = "+szukaj_txt.Text+ " ", con);
             try
             {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Klient został usunięty", "Usunięto", MessageBoxButton.OK, MessageBoxImage.Information);
+                con.Close();
+                wyczyscDane();
+                ZaladujGrid();
+                con.Close();
+            }
+            catch (SqlException ex)
+            {
 
+                MessageBox.Show("Nie usunięto" +ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        private void ZmienBtn_txt_Click(object sender, RoutedEventArgs e)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("update FirstTABLE set Nazwa = '" + nazwa_txt.Text + "', Adres = '" + adres_txt.Text + "', Nip = '" + nip_txt.Text + "', Email = '" + email_txt.Text + "' WHERE ID = '"+szukaj_txt.Text+"' ", con);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Dane klienta zostały zaktualizowane", "Zaktualizowane", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             catch (SqlException ex)
             {
 
                 MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+                wyczyscDane();
+                ZaladujGrid();
             }
         }
     }

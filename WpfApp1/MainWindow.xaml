@@ -7,22 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Label Content="Zarządzanie klientami" Margin="275,21,0,0" VerticalAlignment="Top" Height="45" Width="303" FontSize="25" HorizontalAlignment="Left"/>
-        <Label Content="Nazwa firmy:" HorizontalAlignment="Left" Margin="50,99,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Label Content="Adres:" HorizontalAlignment="Left" Margin="85,144,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Label Content="Nip:" HorizontalAlignment="Left" Margin="96,192,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Label Content="E-mail:" HorizontalAlignment="Left" Margin="75,239,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="nazwa_txt" HorizontalAlignment="Left" Height="23" Margin="163,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16"/>
-        <TextBox x:Name="adres_txt" HorizontalAlignment="Left" Height="23" Margin="163,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16"/>
-        <TextBox x:Name="nip_txt" HorizontalAlignment="Left" Height="23" Margin="163,243,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16"/>
-        <TextBox x:Name="email_txt" HorizontalAlignment="Left" Height="23" Margin="163,196,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16"/>
-        <DataGrid x:Name="datagrid" HorizontalAlignment="Left" Height="174" Margin="352,103,0,0" VerticalAlignment="Top" Width="405"/>
-        <Button x:Name="DodajBtn_txt" Content="Dodaj klienta" HorizontalAlignment="Left" Margin="75,336,0,0" VerticalAlignment="Top" Width="117" Height="45" FontSize="16" FontWeight="Bold" Background="#FF8E8E8E" Click="DodajBtn_txt_Click"/>
-        <Button x:Name="ZmienBtn_txt" Content="Zmień dane" HorizontalAlignment="Left" Margin="256,336,0,0" VerticalAlignment="Top" Width="117" Height="45" FontSize="16" FontWeight="Bold" Background="#FF8E8E8E"/>
+        <Label Content="Zarządzanie klientami" Margin="265,22,0,0" VerticalAlignment="Top" Height="45" Width="303" FontSize="30" HorizontalAlignment="Left" FontFamily="Times New Roman"/>
+        <Label Content="Nazwa firmy:" HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Times New Roman"/>
+        <Label Content="Adres:" HorizontalAlignment="Left" Margin="55,142,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Times New Roman"/>
+        <Label Content="Nip:" HorizontalAlignment="Left" Margin="69,190,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Times New Roman"/>
+        <Label Content="E-mail:" HorizontalAlignment="Left" Margin="50,237,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Times New Roman"/>
+        <TextBox x:Name="nazwa_txt" HorizontalAlignment="Left" Height="23" Margin="113,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <TextBox x:Name="adres_txt" HorizontalAlignment="Left" Height="23" Margin="113,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <TextBox x:Name="nip_txt" HorizontalAlignment="Left" Height="23" Margin="113,243,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <TextBox x:Name="email_txt" HorizontalAlignment="Left" Height="23" Margin="113,196,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <DataGrid x:Name="datagrid" HorizontalAlignment="Left" Height="174" Margin="265,103,0,0" VerticalAlignment="Top" Width="501"/>
+        <Button x:Name="DodajBtn_txt" Content="Dodaj klienta" HorizontalAlignment="Left" Margin="75,336,0,0" VerticalAlignment="Top" Width="117" Height="45" FontSize="16" FontWeight="Bold" Background="#FF38F108" Click="DodajBtn_txt_Click"/>
+        <Button x:Name="ZmienBtn_txt" Content="Zmień dane" HorizontalAlignment="Left" Margin="256,336,0,0" VerticalAlignment="Top" Width="117" Height="45" FontSize="16" FontWeight="Bold" Background="#FFE8A221" Click="ZmienBtn_txt_Click"/>
         <Button x:Name="WyczyscBtn_txt" Content="Wyczyść dane" HorizontalAlignment="Left" Margin="617,336,0,0" VerticalAlignment="Top" Width="117" Height="45" FontSize="16" FontWeight="Bold" Background="#FF8E8E8E" Click="WyczyscBtn_txt_Click"/>
-        <Button x:Name="UsunBtn_txt" Content="Usuń klienta" HorizontalAlignment="Left" Margin="438,336,0,0" VerticalAlignment="Top" Width="117" Height="45" FontSize="16" FontWeight="Bold" Background="#FF8E8E8E" Click="UsunBtn_txt_Click"/>
-        <Label Content="ID:" HorizontalAlignment="Left" Margin="492,288,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="2.285,0.578"/>
-        <TextBox x:Name="szukaj_txt" HorizontalAlignment="Left" Height="32" Margin="536,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="62" FontSize="16"/>
+        <Button x:Name="UsunBtn_txt" Content="Usuń klienta" HorizontalAlignment="Left" Margin="438,336,0,0" VerticalAlignment="Top" Width="117" Height="45" FontSize="16" FontWeight="Bold" Background="#FFE71111" Click="UsunBtn_txt_Click"/>
+        <Label Content="ID:" HorizontalAlignment="Left" Margin="453,288,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="2.285,0.578"/>
+        <TextBox x:Name="szukaj_txt" HorizontalAlignment="Left" Height="32" Margin="493,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="62" FontSize="16"/>
 
 
     </Grid>
